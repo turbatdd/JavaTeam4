@@ -4,6 +4,7 @@ public class Prog6 {
     void main() {
         Scanner sc = new Scanner(System.in);
         String yesOrNo = "Y";
+        boolean isFinish = false;
 
         do {
             System.out.println("Enter user type (R/C/I): ");
@@ -29,6 +30,11 @@ public class Prog6 {
             System.out.println(r);
 
             yesOrNo = sc.next().toLowerCase();
-        } while (yesOrNo.equals("y"));
+
+            if (yesOrNo.equals("n")) {
+                System.out.println("Goodbye! Thanks for using the Electricity Bill Generator.");
+                isFinish = true;
+            }
+        } while (!isFinish);
     }
 }
