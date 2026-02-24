@@ -2,46 +2,71 @@ import java.util.Scanner;
 
 public class Prog4 {
     void main() {
-        //a) 1 – 1/3 + 1/5 – 1/7 + 1/9
-        //• Term 1: 1/1 = 1
-        //• Term 2: -1/3
-        //• Term 3: 1/5
-        //• Term 4: -1/7
-        //• Term 5: 1/9
-        //Output: Sum = 0.832
+        optionA();
+//        optionB();
+    }
 
+    void optionB() {
         Scanner sc = new Scanner(System.in);
-
         System.out.println("Enter your n");
         int n = sc.nextInt();
-        float result = 0;
 
-//        while (true) {
-        if (n <= 0) {
-            System.out.println("You entered negative number");
-//            break;
+        while (true) {
+            if (n <= 0) {
+                System.out.println("You entered negative number");
+                break;
+            }
+
+//            1/2 - 2/4 + 3/8 – 4/16 + 5/32
+            double result = 0.0;
+            int counter = 2;
+            int sign = 1;
+
+            for (int i = 1; i <= n; i++) {
+                double r = (float) i / counter;
+                result = result + (sign * r);
+                sign = sign * -1;
+                counter = counter * 2;
+
+                System.out.println(r);
+            }
+
+
+            System.out.printf("\nthe Result is = %.3f", result);
+            break;
+
         }
+    }
+
+    void optionA() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your n");
+        int n = sc.nextInt();
+
+        while (true) {
+            if (n <= 0) {
+                System.out.println("You entered negative number");
+                break;
+            }
 
 //            float theF = (1 –1 / 3 + 1 / 5 –1 / 7 + 1 / 9);
-        int counter = 1;
-        double rawItem = 0.0;
-        for (int i = 1; i <= n; i++) {
-            counter += 2;
-            rawItem = 1 / counter;
+            double result = 0.0;
+            int counter = 1;
+            int sign = 1;
 
-            System.out.printf("rawItem ----%.5f", rawItem);
-            if (i == 1) {
-                rawItem = 1;
+            for (int i = 1; i <= n; i++) {
+                double r = 1.0 / counter;
+                result = result + (sign * r);
+                sign = sign * -1;
+                counter += 2;
+
+                System.out.println(r);
             }
-            System.out.println(rawItem);
-//            System.out.printf("\nresult " + rawItem);
 
-            result += rawItem;
+
+            System.out.printf("\nthe Result is = %.3f", result);
+            break;
+
         }
-
-        System.out.printf("\nthe Result is = %.2f", result);
-//            break;
-
-//        }
     }
 }
