@@ -4,10 +4,10 @@ import java.util.Arrays;
 public class Prog3 {
 
     void main() {
-        String[] arr = new String[]{"horse", "dog", "cat", "horse", "dog"};
+        String[] arr = new String[]{"horse", "horse", "dog", "cat", "horse", "dog"};
         String[] arr2 = new String[0];
 
-
+        System.out.println("initail Array = " + Arrays.toString(arr));
         for (String str : arr) {
             Object[] rawArrary = Arrays.stream(arr2).filter(r -> r == str).toArray();
 
@@ -16,7 +16,7 @@ public class Prog3 {
             }
         }
 
-        System.out.println("array is = " + Arrays.toString(arr2));
+        System.out.println("Remove duplicated array = " + Arrays.toString(arr2));
     }
 
     String[] addItemToArray(String[] arr, String item) {

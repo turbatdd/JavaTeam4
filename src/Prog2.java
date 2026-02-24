@@ -38,7 +38,7 @@ public class Prog2 {
         for (int i = 0; i < sArr.length; i++) {
             String[] sItems = sArr[i].split(",");
             //column names: productId, name, numInStock, provider, pricePerUnit
-            System.out.println(sItems[0] +"\n");
+            System.out.println(sItems[0] + "\n");
         }
 
     }
