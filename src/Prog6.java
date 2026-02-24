@@ -29,6 +29,6 @@ public class Prog6 {
             System.out.println(r);
 
             yesOrNo = sc.next().toLowerCase();
-        } while (yesOrNo.toUpperCase().equals("Y"));
+        } while (yesOrNo.equals("y"));
     }
 }
