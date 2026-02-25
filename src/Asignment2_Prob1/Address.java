@@ -2,12 +2,22 @@ package Asignment2_Prob1;
 
 public class Address {
     private String street;
+    private String state;
     private String city;
     private int zip;
 
-    public Address(String street, String city, int zip) {
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public Address(String street, String city, String state, int zip) {
         this.street = street;
         this.city = city;
+        this.state = state;
         this.zip = zip;
     }
 
