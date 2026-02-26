@@ -15,22 +15,21 @@ public class Pizza {
     }
 
     private void calculatePrice() {
-        double rawPrice = 0.0;
 
-        switch (pizzaSize) {
-            case SMALL -> rawPrice = 8.0;
-            case MEDIUM -> rawPrice = 10.0;
-            case LARGE -> rawPrice = 12.0;
-        }
+        double choosenPizza = switch (pizzaSize) {
+            case SMALL -> 8.0;
+            case MEDIUM -> 10.0;
+            case LARGE -> 12.0;
+        };
 
-        switch (pizzaType) {
-            case VEGGIE -> rawPrice += 1;
-            case PEPPERONI -> rawPrice += 2;
-            case CHEEZE -> rawPrice += 1.5;
-            case BBQCHICKEN -> rawPrice += 2;
-        }
+        choosenPizza += switch (pizzaType) {
+            case VEGGIE -> 1.0;
+            case PEPPERONI -> 2.0;
+            case CHEEZE -> 1.5;
+            case BBQCHICKEN -> 2.0;
+        };
 
-        price = rawPrice * quantity;
+        price = choosenPizza * quantity;
     }
 
     public String printOrderSummary() {
