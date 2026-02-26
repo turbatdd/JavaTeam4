@@ -5,16 +5,16 @@ public class Pizza {
     private final PizzaSize pizzaSize;
     private final PizzaType pizzaType;
     private final int quantity;
-    private final double price;
+    private double price;
 
     public Pizza(PizzaSize pizzaSize, PizzaType pizzaType, int quantity) {
         this.pizzaSize = pizzaSize;
         this.pizzaType = pizzaType;
         this.quantity = quantity;
-        this.price = this.calculatePrice(); // calculated internally
+        calculatePrice();
     }
 
-    private double calculatePrice() {
+    private void calculatePrice() {
         double rawPrice = 0.0;
 
         switch (pizzaSize) {
@@ -30,7 +30,7 @@ public class Pizza {
             case BBQCHICKEN -> rawPrice += 2;
         }
 
-        return rawPrice * quantity;
+        price = rawPrice * quantity;
     }
 
     public String printOrderSummary() {
