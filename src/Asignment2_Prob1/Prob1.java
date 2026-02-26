@@ -1,6 +1,6 @@
 package Asignment2_Prob1;
 
-public class Proj1 {
+public class Prob1 {
 
     void main() {
         Customer cus1 = new Customer("Turuu", "Davaakhishigt", "99122451");

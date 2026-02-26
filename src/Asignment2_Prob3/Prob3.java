@@ -1,7 +1,5 @@
-package Asignment3_Prob3;
+package Asignment2_Prob3;
 
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
 import java.util.Scanner;
 
 public class Prob3 {

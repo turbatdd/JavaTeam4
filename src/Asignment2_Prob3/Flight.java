@@ -1,4 +1,4 @@
-package Asignment3_Prob3;
+package Asignment2_Prob3;
 
 public final class Flight {
     //    origin, destination, distanceKm

@@ -1,6 +1,6 @@
-package Asignment3_Prob3;
+package Asignment2_Prob3;
 
-public class Hotel {
+public final class Hotel {
 //    Instance Fields: hotelName, nights, pricePerNight
 //• Method: compute and return nights * pricePerNight
 

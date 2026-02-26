@@ -1,6 +1,6 @@
-package Asignment3_Prob3;
+package Asignment2_Prob3;
 
-public class Car {
+public final class Car {
 
     private final int carModel;
     private final int days;
