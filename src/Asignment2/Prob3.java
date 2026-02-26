@@ -88,6 +88,15 @@ public class Prob3 {
                     System.out.println("Thank you see you later");
                     break;
                 }
+
+                do{
+                    System.out.println("Your keyword is incorrect");
+                    System.out.println("Do you want to continue (y/n):\n");
+                    yesOrNo = sc.nextLine().toLowerCase();
+                }
+                while (!yesOrNo.equals("y") && !yesOrNo.equals("n"));
+
+
             } catch (Exception e) {
                 System.out.println(e.toString());
             }
