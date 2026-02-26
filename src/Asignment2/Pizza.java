@@ -1,13 +1,5 @@
 package Asignment2;
 
-enum PizzaSize {
-    SMALL, MEDIUM, LARGE
-}
-
-enum PizzaType {
-    VEGGIE, PEPPERONI, CHEEZE, BBQCHICKEN
-}
-
 public class Pizza {
 
     private final PizzaSize pizzaSize;
@@ -19,7 +11,7 @@ public class Pizza {
         this.pizzaSize = pizzaSize;
         this.pizzaType = pizzaType;
         this.quantity = quantity;
-        this.price = calculatePrice(); // calculated internally
+        this.price = this.calculatePrice(); // calculated internally
     }
 
     private double calculatePrice() {
