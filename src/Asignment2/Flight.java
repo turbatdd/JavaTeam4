@@ -3,7 +3,7 @@ package Asignment2;
 public record Flight(String origin, String destination, int distanceKm) {
     //    origin, destination, distanceKm
 
-    public double computeFlightTime(double avgSpeed) {
+    private double computeFlightTime(double avgSpeed) {
         return this.distanceKm / avgSpeed;
     }
 

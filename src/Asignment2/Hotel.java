@@ -11,7 +11,7 @@ public record Hotel(String hotelName, int nights, int pricePerNight) {
                 """, this.hotelName, this.nights, this.pricePerNight, this.totalCost());
     }
 
-    public double totalCost() {
+    private double totalCost() {
         return this.nights * this.pricePerNight;
     }
 }

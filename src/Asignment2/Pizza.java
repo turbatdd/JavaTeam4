@@ -10,7 +10,6 @@ enum PizzaType {
 
 public class Pizza {
 
-
     private final PizzaSize pizzaSize;
     private final PizzaType pizzaType;
     private final int quantity;

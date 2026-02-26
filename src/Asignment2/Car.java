@@ -30,11 +30,11 @@ public final class Car {
         this.milesPerDay = milesPerDay;
     }
 
-    public double totalRentalCost() {
+    private double totalRentalCost() {
         return days * ratePerDay;
     }
 
-    public double totalMilesAllowed() {
+    private double totalMilesAllowed() {
         return days * milesPerDay;
     }
 
