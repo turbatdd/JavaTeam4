@@ -1,10 +1,7 @@
-package Asignment2_Prob2;
+package Asignment2;
 
-import java.text.DateFormat;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
-import java.util.Date;
 import java.util.Scanner;
 
 public class Prob2 {
@@ -54,8 +51,6 @@ public class Prob2 {
                     }
                     System.out.println("Please enter your zone number");
                     int zoneIndex = sc.nextInt();
-
-                    System.out.println("Your selected timezone is: " + sampleZone[zoneIndex - 1]);
 
                     ZoneId selectedZone = ZoneId.of(sampleZone[zoneIndex - 1]);
                     ZonedDateTime converted = zonedDate.withZoneSameInstant(selectedZone);

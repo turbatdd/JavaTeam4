@@ -1,3 +1,5 @@
+package Asignment1;
+
 import java.util.random.RandomGenerator;
 
 public class QuickEmiQuote {

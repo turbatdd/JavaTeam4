@@ -1,4 +1,4 @@
-package Asignment2_Prob1;
+package Asignment2;
 
 public class Prob1 {
 
@@ -24,7 +24,7 @@ public class Prob1 {
                 String rawCity = rawAdd.getCity();
 
                 if (!rawCity.isEmpty() && rawCity.toLowerCase().equals("chicago")) {
-                    System.out.println(cusArr[i]);
+                    System.out.println(cusArr[i].toString());
                 }
             }
         }

@@ -1,4 +1,4 @@
-package Asignment2_Prob1;
+package Asignment2;
 
 public class Address {
     private String street;

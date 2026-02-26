@@ -1,4 +1,4 @@
-package Asignment2_Prob3;
+package Asignment2;
 
 import java.util.Scanner;
 
