@@ -5,7 +5,7 @@ public class Pizza {
     private final PizzaSize pizzaSize;
     private final PizzaType pizzaType;
     private final int quantity;
-    private double price;
+    private final double price;
 
     public Pizza(PizzaSize pizzaSize, PizzaType pizzaType, int quantity) {
         this.pizzaSize = pizzaSize;
