@@ -12,15 +12,7 @@ public class TestClass {
         };
 
         for (Product p : arr) {
-            if (p instanceof Clothing) {
-                System.out.println(p.getClass().getSimpleName() + " class\n" + ((Clothing) p).toString());
-            } else if (p instanceof Furniture) {
-                System.out.println(p.getClass().getSimpleName() + " class\n" + ((Furniture) p).toString());
-            } else if (p instanceof Electronics) {
-                System.out.println(p.getClass().getSimpleName() + " class\n" + ((Electronics) p).toString());
-            } else {
-                System.out.println(p.getClass().getSimpleName() + " class\n" + ((Product) p).toString());
-            }
+            System.out.println(p.getClass().getSimpleName() + " class\n" + p.toString());
         }
 
         System.out.println("Total products price: " + sumProducts(arr));
