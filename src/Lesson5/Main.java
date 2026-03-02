@@ -74,6 +74,7 @@ public class Main {
     // abstract public double getAbstract() -> Unimplement method , You should provide implementation in child class only and noBody
     // IN child class @override public double getAbstract(){}
     // new Emp() error check but works fine at employee [] er = {new Emp(5)};
+    // What is the SAM
 
 
 }

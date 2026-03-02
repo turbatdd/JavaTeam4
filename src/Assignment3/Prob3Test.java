@@ -23,12 +23,40 @@ public class Prob3Test {
     public void testPalindrome() {
         Prob3 p = new Prob3();
 
-        boolean isPal = p.isPalindrome(12020);
+        boolean isPal = p.isPalindrome(12021);
         boolean isPal2 = p.isPalindrome(1221);
 
-//        assertEquals(true,isPal);
-        assertEquals(true, isPal2);
+        assertTrue(isPal);
+        assertTrue(isPal2);
         System.out.println("Test ENd");
     }
+
+    @Test
+    public void testNoPalindrome() {
+        Prob3 p = new Prob3();
+
+        boolean isPal = p.isPalindrome(1234);
+        boolean isPal2 = p.isPalindrome(1532);
+
+        assertFalse(isPal);
+        assertFalse(isPal2);
+        System.out.println("Test ENd");
+    }
+
+    @Test
+    public void testZeo() {
+        Prob3 p = new Prob3();
+
+        boolean isPal = p.isPalindrome(0);
+//        assertEquals(true,isPal);
+        assertFalse(isPal);
+        System.out.println("Test ENd");
+    }
+
+    @Test
+    public void testNegative() {
+        assertFalse(Prob3.isPalindrome(-121));
+    }
+
 
 }

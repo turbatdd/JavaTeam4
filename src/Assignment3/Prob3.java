@@ -21,7 +21,7 @@ public class Prob3 {
     }
 
     public static boolean isPalindrome(int i) {
-        if (i == 0)
+        if (i < 0)
             return false;
 
         if (i == findPalindrome(i, 0))

@@ -21,17 +21,29 @@ public class Prob4Test {
 
 
     @Test
-    public void test4() {
+    public void test1() {
         Prob4 p = new Prob4();
+        int res = p.findMaxFromArray(new int[]{10, 22, 33, 9, 10});
+        int res2 = p.findMaxFromArray(new int[]{-1, 10, 10, 9, 10});
 
-        int maxVal = p.findMaxFromArray(new int[]{10, 22, 33, 9, 10});
-        assertEquals(33, maxVal);
+        assertEquals(33, res);
+        assertEquals(10, res2);
+
     }
+
     @Test
-    public void test41() {
+    public void testNegativeArr() {
         Prob4 p = new Prob4();
 
-        int maxVal = p.findMaxFromArray(new int[]{10, 22, 33, 9, 10});
-        assertEquals(22, maxVal);
+        int res = p.findMaxFromArray(new int[]{-1, -2, -3, -5, -10});
+        assertEquals(-1, res);
+    }
+
+    @Test
+    public void testZeroNum() {
+        Prob4 p = new Prob4();
+
+        int res = p.findMaxFromArray(new int[]{-1, -2, 0, -5, -10});
+        assertEquals(0, res);
     }
 }
