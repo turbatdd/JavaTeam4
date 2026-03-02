@@ -25,9 +25,9 @@ public class Prob1 {
     }
 
     public static char findMinChar(String str) {
-        if (str.length() == 1) {
+        if ( str == null || str.isEmpty()){
 //            System.out.println("ENDD LENGTH");
-            return str.charAt(0);
+            return Character.MAX_VALUE;
         }
 
         char rawC = findMinChar(str.substring(1));

@@ -19,6 +19,10 @@ public class Prob4 {
     }
 
     private int findMaxValue(int[] arr, int idx) {
+        if (arr == null) {
+            return Integer.MAX_VALUE;
+        }
+
         if (idx == arr.length - 1)
             return arr[idx];
 

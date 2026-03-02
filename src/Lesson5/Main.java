@@ -3,16 +3,14 @@ package Lesson5;
 public class Main {
 
     void main() {
-//        Employee e1 = new Employee("Turuu", 110.0);
+        Employee e1 = new Employee("Turuu", 110.0);
 //        Employee e2 = new Manager("Bat", 200.0);
 //        Manager e3 = new Manager("Tur", 550.0);
+        Object[] stuff = {"Java", 10.11, 11, 13.65, "Hi"};
 
-
-        Object[] stuff = {"Java",10.11,11,13.65, "Hi"};
-
+//        System.out.println(e1.getClass().getSimpleName());
 
     }
-
 
 //    Lesson 5
 //
@@ -27,12 +25,12 @@ public class Main {
 //
 //    If base class could not create any default constructor its going to fine
 //
-//// Test call any constrcatror
+// Test call any constrcatror
 //
 //- no constructor - 2 contractor  - call C1 Constractor
 //
-//// Super call test
-//// Override method call example
+// Super call test
+// Override method call example
 //
 //    @Override
 //    double getSalary(){
@@ -58,5 +56,24 @@ public class Main {
 //    Default protected same rule as Package
 //    Default variable only can asses as Package
 //    if have a Inherent so can access protected value (pack are difference is no problem)
+
+
+    // switch case automatitcaly check instance of Class parent or base class check
+    // What is the LSP?
+
+    // Final method override not working beacause it is final
+    // Multiple inherantance not support on Java
+
+    // ABSTRACTT CLASS
+
+    // If class is Abstract  -Abstract class cannot create object   like = new Fater()  could not
+    // You can declare as a Parameter
+    // HAS Implement and unimplement methos
+    // abstract class Father{}
+    // public void m1(){} -> Implement method
+    // abstract public double getAbstract() -> Unimplement method , You should provide implementation in child class only and noBody
+    // IN child class @override public double getAbstract(){}
+    // new Emp() error check but works fine at employee [] er = {new Emp(5)};
+
 
 }
