@@ -1,4 +1,4 @@
-package Asignment2;
+package Asignment2.Prob3;
 
 public record Flight(String origin, String destination, int distanceKm) {
     //    origin, destination, distanceKm

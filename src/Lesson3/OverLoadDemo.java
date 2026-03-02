@@ -1,9 +1,5 @@
 package Lesson3;
 
-import Asignment2.Pizza;
-
-import java.util.Arrays;
-
 public class OverLoadDemo {
     // Overload methods
     int x; //Instance Variable

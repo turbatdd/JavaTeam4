@@ -1,4 +1,4 @@
-package Asignment2;
+package Asignment2.Prob3;
 
 import java.util.Scanner;
 
@@ -20,6 +20,19 @@ public class Prob3 {
                         """);
 
                 String menu = sc.nextLine().toLowerCase();
+
+                do {
+
+                    System.out.println("Your keyword is incorrect");
+                    System.out.println("""
+                            Enter F for Flight Booking
+                            Enter H for Hotel Booking
+                            Enter C for Car Rental
+                            """);
+
+                    menu = sc.nextLine().toLowerCase();
+                } while (menu.isEmpty() && (!menu.toLowerCase().equals("f") || !menu.toLowerCase().equals("h") || !menu.toLowerCase().equals("c")));
+
 
                 switch (menu) {
                     case "f":
@@ -89,12 +102,11 @@ public class Prob3 {
                     break;
                 }
 
-                do{
+                do {
                     System.out.println("Your keyword is incorrect");
                     System.out.println("Do you want to continue (y/n):\n");
                     yesOrNo = sc.nextLine().toLowerCase();
-                }
-                while (!yesOrNo.equals("y") && !yesOrNo.equals("n"));
+                } while (!yesOrNo.equals("y") && !yesOrNo.equals("n"));
 
 
             } catch (Exception e) {

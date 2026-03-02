@@ -1,4 +1,4 @@
-package Asignment2;
+package Asignment2.Prob4;
 
 public class Pizza {
 
