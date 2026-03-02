@@ -1,4 +1,4 @@
-package Asignment1;
+package Assignment1;
 
 public class Prog2 {
 

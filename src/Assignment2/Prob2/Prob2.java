@@ -1,4 +1,4 @@
-package Asignment2.Prob2;
+package Assignment2.Prob2;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;

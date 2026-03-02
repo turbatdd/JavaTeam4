@@ -1,4 +1,4 @@
-package Asignment2.Prob3;
+package Assignment2.Prob3;
 
 public record Hotel(String hotelName, int nights, int pricePerNight) {
     @Override

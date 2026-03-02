@@ -1,4 +1,4 @@
-package Asignment2.Prob1;
+package Assignment2.Prob1;
 
 public class Customer {
     private String firstName;

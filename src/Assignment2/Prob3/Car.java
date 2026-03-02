@@ -1,4 +1,4 @@
-package Asignment2.Prob3;
+package Assignment2.Prob3;
 
 public final class Car {
 
