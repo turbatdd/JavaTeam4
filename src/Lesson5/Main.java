@@ -76,5 +76,16 @@ public class Main {
     // new Emp() error check but works fine at employee [] er = {new Emp(5)};
     // What is the SAM
 
+ /*
+    Reflectaion Obj.getClassName
 
+    Check obj
+
+    pub
+    if(ob){
+
+
+
+
+  */
 }

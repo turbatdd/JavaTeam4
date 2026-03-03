@@ -37,7 +37,7 @@ public class Product {
         return String.format("""
                 Product name: %s
                 Price: %.2f
-                """, this.productName, this.price);
+                """, getProductName(), getPrice());
     }
 
 }

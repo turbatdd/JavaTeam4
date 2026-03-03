@@ -9,6 +9,10 @@ public class SoundSensor implements Sensor {
     private LocalDateTime lastupdated;
 
     SoundSensor(double soundlevel, Location location) {
+        if (soundlevel < 0) {
+            throw new IllegalArgumentException("Sound level is negative");
+        }
+
         this.soundlevel = soundlevel;
         this.location = location;
     }
@@ -50,6 +54,6 @@ public class SoundSensor implements Sensor {
                 Location: %s
                 Last Updated: %s
                 Action: %s
-                """, getSensorType(), getReading(), getLocation(), getLastUpdated().format(dtf), performAction());
+                """, getSensorType(), getReading(), getLocation(), getLastUpdated().format(DATE_FORMAT1), performAction());
     }
 }

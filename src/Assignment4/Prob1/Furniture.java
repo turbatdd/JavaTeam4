@@ -31,7 +31,7 @@ public class Furniture extends Product {
         sb.append("\nShipping cost: ");
         sb.append(shippingCost);
         sb.append("\nThe Price: ");
-        sb.append(this.getPrice());
+        sb.append(getPrice());
         sb.append("\n");
 
         return sb.toString();

@@ -48,6 +48,6 @@ public class TemperatureSensor implements Sensor {
                 Location: %s
                 Last Updated: %s
                 Action: %s
-                """, getSensorType(), getReading(), getLocation(), getLastUpdated().format(dtf), performAction());
+                """, getSensorType(), getReading(), getLocation(), getLastUpdated().format(DATE_FORMAT1), performAction());
     }
 }

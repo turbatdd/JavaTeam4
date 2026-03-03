@@ -32,7 +32,7 @@ public class Clothing extends Product {
         sb.append("\nDiscountValue: ");
         sb.append(discountValue);
         sb.append("\nThe Price: ");
-        sb.append(this.getPrice());
+        sb.append(getPrice());
 
         sb.append("\n");
 

@@ -8,6 +8,10 @@ public class LightSensor implements Sensor {
     private LocalDateTime lastupdated;
 
     LightSensor(double lightlevel, Location location) {
+        if (lightlevel < 0) {
+            throw new IllegalArgumentException("Light level is negative");
+        }
+
         this.lightlevel = lightlevel;
         this.location = location;
     }
@@ -49,6 +53,6 @@ public class LightSensor implements Sensor {
                 Location: %s
                 Last Updated: %s
                 Action: %s
-                """, getSensorType(), getReading(), getLocation(), getLastUpdated().format(dtf), performAction());
+                """, getSensorType(), getReading(), getLocation(), getLastUpdated().format(DATE_FORMAT1), performAction());
     }
 }

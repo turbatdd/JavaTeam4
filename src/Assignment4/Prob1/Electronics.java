@@ -32,7 +32,7 @@ public class Electronics extends Product {
         sb.append("\nWarranty cost: ");
         sb.append(warrantyCost);
         sb.append("\nThe Price: ");
-        sb.append(this.getPrice());
+        sb.append(getPrice());
         sb.append("\n");
 
         return sb.toString();
