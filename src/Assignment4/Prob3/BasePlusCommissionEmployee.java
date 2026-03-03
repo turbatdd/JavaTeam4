@@ -2,7 +2,7 @@ package Assignment4.Prob3;
 
 public class BasePlusCommissionEmployee extends CommissionEmployee {
 
-    private double baseSalary;
+    private final double baseSalary;
 
     BasePlusCommissionEmployee(String firstName, String lastName, String socialSecurityNumber, double baseSalary, double grossSales, double commissionRate) {
         super(firstName, lastName, socialSecurityNumber, grossSales, commissionRate);
@@ -16,8 +16,7 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
 
     @Override
     public String toString() {
-
-        String str = String.format("""
+        return String.format("""
                 Firstname: %s
                 Lastname: %s
                 Social security number: %s
@@ -26,8 +25,5 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
                 Base Salary: %.2f
                 Payment: %.2f \n
                 """, getFirsName(), getLastName(), getSocialSecurityNumber(), getGrossSales(), getCommissionRate(), baseSalary, getPayment());
-
-        return str;
-
     }
 }

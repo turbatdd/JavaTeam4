@@ -3,16 +3,16 @@ package Assignment4.Prob2;
 import java.time.LocalDateTime;
 
 public class LightSensor implements Sensor {
-    private double lightlevel;
-    private Location location;
-    private LocalDateTime lastupdated;
+    private final double lightLevel;
+    private final String location;
+    private LocalDateTime lastUpdated;
 
-    LightSensor(double lightlevel, Location location) {
-        if (lightlevel < 0) {
+    LightSensor(double lightLevel, String location) {
+        if (lightLevel < 0) {
             throw new IllegalArgumentException("Light level is negative");
         }
 
-        this.lightlevel = lightlevel;
+        this.lightLevel = lightLevel;
         this.location = location;
     }
 
@@ -23,7 +23,7 @@ public class LightSensor implements Sensor {
 
     @Override
     public double getReading() {
-        return lightlevel;
+        return lightLevel;
     }
 
     @Override
@@ -33,13 +33,13 @@ public class LightSensor implements Sensor {
 
     @Override
     public LocalDateTime getLastUpdated() {
-        lastupdated = LocalDateTime.now();
-        return lastupdated;
+        lastUpdated = LocalDateTime.now();
+        return lastUpdated;
     }
 
     @Override
     public String performAction() {
-        if (lightlevel > 100)
+        if (lightLevel > 100)
             return "Light is sufficient";
 
         return "Light level is too low! Turning on the lights.";

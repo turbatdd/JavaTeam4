@@ -3,11 +3,11 @@ package Assignment4.Prob2;
 import java.time.LocalDateTime;
 
 public class TemperatureSensor implements Sensor {
-    private double temperature;
-    private Location location;
-    private LocalDateTime lastupdated;
+    private final double temperature;
+    private final String location;
+    private LocalDateTime lastUpdated;
 
-    TemperatureSensor(double temperature, Location location) {
+    TemperatureSensor(double temperature, String location) {
         this.temperature = temperature;
         this.location = location;
     }
@@ -24,13 +24,13 @@ public class TemperatureSensor implements Sensor {
 
     @Override
     public String getLocation() {
-        return location.toString();
+        return location;
     }
 
     @Override
     public LocalDateTime getLastUpdated() {
-        lastupdated = LocalDateTime.now();
-        return lastupdated;
+        lastUpdated = LocalDateTime.now();
+        return lastUpdated;
     }
 
     @Override

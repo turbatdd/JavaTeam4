@@ -25,15 +25,12 @@ public class Furniture extends Product {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder(super.toString());
-        sb.append("Material: ");
-        sb.append(material.toString());
-        sb.append("\nShipping cost: ");
-        sb.append(shippingCost);
-        sb.append("\nThe Price: ");
-        sb.append(getPrice());
-        sb.append("\n");
-
-        return sb.toString();
+        return String.format("""
+                Product name: %s
+                Price: %.2f
+                Material: %s
+                Shipping cost: %.2f
+                The price: %.2f
+                """, productName, price, material.toString(), shippingCost, getPrice());
     }
 }

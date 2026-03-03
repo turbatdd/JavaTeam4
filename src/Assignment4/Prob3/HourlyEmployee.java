@@ -2,8 +2,8 @@ package Assignment4.Prob3;
 
 public class HourlyEmployee extends Employee {
 
-    private double wage;
-    private double hours;
+    private final double wage;
+    private final double hours;
 
     HourlyEmployee(String firstName, String lastName, String socialSecurityNumber, double wage, double hours) {
         super(firstName, lastName, socialSecurityNumber);
@@ -18,16 +18,13 @@ public class HourlyEmployee extends Employee {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder(super.toString());
-
-        String str = String.format("""
+        return String.format("""
+                Firstname: %s
+                Lastname: %s
+                Social security number: %s
                 Wage: %.2f
                 hours: %.2f%%
-                Payment: %.2f
-                """, wage, hours, getPayment());
-
-        sb.append(str);
-
-        return sb.toString();
+                Payment: %.2f \n
+                """, getFirsName(), getLastName(), getSocialSecurityNumber(), wage, hours, getPayment());
     }
 }

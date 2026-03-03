@@ -26,16 +26,12 @@ public class Clothing extends Product {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder(super.toString());
-        sb.append("Brand: ");
-        sb.append(brand);
-        sb.append("\nDiscountValue: ");
-        sb.append(discountValue);
-        sb.append("\nThe Price: ");
-        sb.append(getPrice());
-
-        sb.append("\n");
-
-        return sb.toString();
+        return String.format("""
+                Product name: %s
+                Price: %.2f
+                Brand: %s
+                Discount Value: %.2f
+                The price: %.2f
+                """, productName, price, brand, discountValue, getPrice());
     }
 }

@@ -26,15 +26,13 @@ public class Electronics extends Product {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder(super.toString());
-        sb.append("Warranty: ");
-        sb.append(warranty);
-        sb.append("\nWarranty cost: ");
-        sb.append(warrantyCost);
-        sb.append("\nThe Price: ");
-        sb.append(getPrice());
-        sb.append("\n");
+        return String.format("""
+                Product name: %s
+                Price: %.2f
+                Warranty: %d
+                Warranty cost: %.2f
+                The price: %.2f
+                """, productName, price, warranty, warrantyCost, getPrice());
 
-        return sb.toString();
     }
 }

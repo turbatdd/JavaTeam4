@@ -10,7 +10,7 @@ public class Prob3Test {
                 new CommissionEmployee("Turbat", "Davaa", "1111", 2000.0, 0.10),
                 new HourlyEmployee("Bat", "Dorj", "3333", 30, 8.0),
                 new SalariedEmployee("Gerel", "Khand", "4444", 1400),
-                new CommissionEmployee("Javkhaa", "Tsetseg", "5555", 6000.0, 0.10),
+                new CommissionEmployee("Javkhaa", "Tsetseg", "5555", 2500, 0.10),
                 new BasePlusCommissionEmployee("Mandah", "Bayar", "2222", 1000.0, 2000.0, 0.10),
         };
 

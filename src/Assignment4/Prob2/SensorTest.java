@@ -5,11 +5,11 @@ import java.time.LocalDateTime;
 public class SensorTest {
     void main() {
         Sensor[] arr = {
-                new LightSensor(100, Location.GARDEN),
-                new TemperatureSensor(32.5, Location.LIVING_ROOM),
-                new SoundSensor(50.0, Location.BEDROOM),
-                new TemperatureSensor(38.0, Location.KITCHEN),
-                new LightSensor(90.0, Location.BEDROOM)
+                new LightSensor(100, "Garden"),
+                new TemperatureSensor(32.5, "Living room"),
+                new SoundSensor(50.0, "Bedroom"),
+                new TemperatureSensor(38.0, "Kitchen"),
+                new LightSensor(90.0, "Bedroom")
         };
 
         for (Sensor p : arr) {

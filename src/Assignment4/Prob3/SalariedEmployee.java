@@ -16,15 +16,12 @@ public class SalariedEmployee extends Employee {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder(super.toString());
-
-        String str = String.format("""
+        return String.format("""
+                Firstname: %s
+                Lastname: %s
+                Social security number: %s
                 Weekly salary: %.2f
-                Payment: %.2f
-                """, weeklySalary, getPayment());
-
-        sb.append(str);
-
-        return sb.toString();
+                Payment: %.2f \n
+                """, getFirsName(), getLastName(), getSocialSecurityNumber(), weeklySalary, getPayment());
     }
 }

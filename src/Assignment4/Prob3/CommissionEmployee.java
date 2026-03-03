@@ -2,8 +2,8 @@ package Assignment4.Prob3;
 
 public class CommissionEmployee extends Employee {
 
-    private double grossSales;
-    private double commissionRate;
+    private final double grossSales;
+    private final double commissionRate;
 
     CommissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSales, double commissionRate) {
         super(firstName, lastName, socialSecurityNumber);
@@ -15,17 +15,10 @@ public class CommissionEmployee extends Employee {
         return grossSales;
     }
 
-    public void setGrossSales(double grossSales) {
-        this.grossSales = grossSales;
-    }
-
     public double getCommissionRate() {
         return commissionRate;
     }
 
-    public void setCommissionRate(double commissionRate) {
-        this.commissionRate = commissionRate;
-    }
 
     @Override
     double getPayment() {
@@ -34,16 +27,13 @@ public class CommissionEmployee extends Employee {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder(super.toString());
-
-        String str = String.format("""
+        return String.format("""
+                Firstname: %s
+                Lastname: %s
+                Social security number: %s
                 GrossSales salary: %.2f
                 Commission rate: %.2f%%
-                Payment: %.2f
-                """, grossSales, commissionRate, getPayment());
-
-        sb.append(str);
-
-        return sb.toString();
+                Payment: %.2f \n
+                """, getFirsName(), getLastName(), getSocialSecurityNumber(), getGrossSales(), commissionRate, getPayment());
     }
 }

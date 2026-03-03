@@ -4,16 +4,16 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class SoundSensor implements Sensor {
-    private double soundlevel;
-    private Location location;
-    private LocalDateTime lastupdated;
+    private final double soundLevel;
+    private final String location;
+    private LocalDateTime lastUpdated;
 
-    SoundSensor(double soundlevel, Location location) {
-        if (soundlevel < 0) {
+    SoundSensor(double soundLevel, String location) {
+        if (soundLevel < 0) {
             throw new IllegalArgumentException("Sound level is negative");
         }
 
-        this.soundlevel = soundlevel;
+        this.soundLevel = soundLevel;
         this.location = location;
     }
 
@@ -24,24 +24,24 @@ public class SoundSensor implements Sensor {
 
     @Override
     public double getReading() {
-        return soundlevel;
+        return soundLevel;
     }
 
     @Override
     public String getLocation() {
-        return location.toString();
+        return location;
     }
 
     @Override
     public LocalDateTime getLastUpdated() {
-        lastupdated = LocalDateTime.now();
+        lastUpdated = LocalDateTime.now();
 
-        return lastupdated;
+        return lastUpdated;
     }
 
     @Override
     public String performAction() {
-        if (soundlevel > 70)
+        if (soundLevel > 70)
             return "Turn on noise cancellation";
         return "Sound level is within the normal range.";
     }

@@ -1,14 +1,10 @@
 package Assignment4.Prob4;
 
 public class WashingMachine implements ApplianceInterface {
-    private int loadCapacity;
+    private final int loadCapacity;
 
     public WashingMachine(int loadCapacity) {
         this.loadCapacity = loadCapacity;
-    }
-
-    public int getLoadCapacity() {
-        return loadCapacity;
     }
 
     @Override

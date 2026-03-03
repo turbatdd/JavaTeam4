@@ -1,8 +1,8 @@
 package Assignment4.Prob1;
 
 public class Product {
-    public String productName;
-    public double price;
+    protected String productName;
+    protected double price;
 
     public Product(String productName, double price) {
         if (productName == null || productName.isEmpty()) {
