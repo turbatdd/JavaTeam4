@@ -14,22 +14,6 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
         return baseSalary + (getGrossSales() * getCommissionRate());
     }
 
-//    @Override
-//    public String toString() {
-
-    /// /        StringBuilder sb = new StringBuilder(super.toString());
-//
-//        String str = String.format("""
-//                Base salary: %.2f
-//                GrossSales salary: %.2f
-//                Commission rate: %.2f%%
-//                Payment: %.2f
-//                """, baseSalary, getGrossSales(), getCommissionRate(), getPayment());
-//
-//        sb.append(str);
-//
-//        return sb.toString();
-//    }
     @Override
     public String toString() {
 
@@ -42,7 +26,6 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
                 Base Salary: %.2f
                 Payment: %.2f \n
                 """, getFirsName(), getLastName(), getSocialSecurityNumber(), getGrossSales(), getCommissionRate(), baseSalary, getPayment());
-
 
         return str;
 

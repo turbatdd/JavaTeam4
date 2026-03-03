@@ -15,16 +15,15 @@ public class Prob3Test {
         };
 
         for (Employee p : arr) {
-            System.out.println(p.toString());
+            System.out.println(p);
         }
 
         double maxSal = 600.0;
         Employee[] res = findSalaryList(arr, maxSal);
 
         System.out.println("Finding salary max: " + maxSal + " Found = " + res.length + "\n");
-        for (Employee p : res) {
-            System.out.println(p.toString());
-        }
+
+        System.out.println(Arrays.toString(res));
     }
 
     public static Employee[] findSalaryList(Employee[] col, double salary) {

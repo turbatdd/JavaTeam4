@@ -13,7 +13,7 @@ public class SensorTest {
         };
 
         for (Sensor p : arr) {
-            System.out.println(p.toString());
+            System.out.println(p);
         }
     }
 }

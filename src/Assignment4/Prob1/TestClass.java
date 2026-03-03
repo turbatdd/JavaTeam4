@@ -12,7 +12,7 @@ public class TestClass {
         };
 
         for (Product p : arr) {
-            System.out.println(p.getClass().getSimpleName() + " class\n" + p.toString());
+            System.out.println(arr);
         }
 
         System.out.println("Total products price: " + sumProducts(arr));
