@@ -23,6 +23,6 @@ public class Secretary extends DeptEmployee {
 
     @Override
     public String toString() {
-        return "name=" + super.getName() + ", salary=" + netSalary + ", hireDate=" + super.getHireDate();
+        return "name=" + super.getName() + ", salary=" + getSalary() + ", hireDate=" + super.getHireDate();
     }
 }
