@@ -1,4 +1,4 @@
-package Lesson6.Sort3;
+package Lesson6.sort2;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -23,7 +23,19 @@ public class PersonData {
 
         PersonData pd = new PersonData();
         System.out.println("Before Sorting: " + Arrays.toString(persons));
-        Arrays.sort(persons, new Person.MyStaticInner());
-        System.out.println("After Sort by reversaed lname: " + Arrays.toString(persons));
+        Arrays.sort(persons, pd.getInner());
+        System.out.println("After Sorting: " + Arrays.toString(persons));
+    }
+
+    private class MyInnerSort implements Comparator<Person> {
+
+        @Override
+        public int compare(Person o1, Person o2) {
+            return o1.getLname().compareTo(o2.getLname());
+        }
+    }
+
+    public MyInnerSort getInner() {
+        return new MyInnerSort();
     }
 }

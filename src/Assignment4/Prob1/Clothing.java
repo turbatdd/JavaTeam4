@@ -32,6 +32,6 @@ public class Clothing extends Product {
                 Brand: %s
                 Discount Value: %.2f
                 The price: %.2f
-                """, productName, price, brand, discountValue, getPrice());
+                """, super.getProductName(), super.getPrice(), brand, discountValue, getPrice());
     }
 }

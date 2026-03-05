@@ -1,4 +1,4 @@
-package Lesson6.Sort2;
+package Lesson6.sort5;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -21,21 +21,19 @@ public class PersonData {
     public static void main(String[] args) {
         Person[] persons = prepareData();
 
-        PersonData pd = new PersonData();
         System.out.println("Before Sorting: " + Arrays.toString(persons));
-        Arrays.sort(persons, pd.getInner());
-        System.out.println("After Sorting: " + Arrays.toString(persons));
-    }
 
-    private class MyInnerSort implements Comparator<Person> {
+        //Anonymous implementation
+        Arrays.sort(persons, new Comparator<Person>() {
+            @Override
+            public int compare(Person o1, Person o2) {
+                return Double.compare(o2.getSalary(), o1.getSalary());
+            }
+        });
 
-        @Override
-        public int compare(Person o1, Person o2) {
-            return o1.getLname().compareTo(o2.getLname());
-        }
-    }
+        //Lambda implementation
+        Arrays.sort(persons, (o1, o2) -> Double.compare(o2.getSalary(), o1.getSalary()));
 
-    public MyInnerSort getInner() {
-        return new MyInnerSort();
+        System.out.println("After Sort by reversaed salary: " + Arrays.toString(persons));
     }
 }

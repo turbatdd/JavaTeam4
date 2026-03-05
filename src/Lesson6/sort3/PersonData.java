@@ -1,4 +1,4 @@
-package Lesson6.Sort;
+package Lesson6.sort3;
 
 import java.util.Arrays;
 // Sort1-Outside Comparator
@@ -19,16 +19,10 @@ public class PersonData {
 
     public static void main(String[] args) {
         Person[] persons = prepareData();
-        // Outside Name Comparator
 
-//        Person[] arr =Arrays.sort(persons,r->r.getFname());
+        PersonData pd = new PersonData();
         System.out.println("Before Sorting: " + Arrays.toString(persons));
-
-
-        FnameCom com = new FnameCom();
-        Arrays.sort(persons, com);
-
-        System.out.println("After Sorting: " + Arrays.toString(persons));
-
+        Arrays.sort(persons, new Person.MyStaticInner());
+        System.out.println("After Sort by reversaed lname: " + Arrays.toString(persons));
     }
 }

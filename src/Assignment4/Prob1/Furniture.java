@@ -31,6 +31,6 @@ public class Furniture extends Product {
                 Material: %s
                 Shipping cost: %.2f
                 The price: %.2f
-                """, productName, price, material.toString(), shippingCost, getPrice());
+                """, super.getProductName(), super.getPrice(), material.toString(), shippingCost, getPrice());
     }
 }

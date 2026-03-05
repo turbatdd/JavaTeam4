@@ -1,4 +1,4 @@
-package Lesson6.Sort4;
+package Lesson6.sort4;
 
 import java.util.Arrays;
 import java.util.Comparator;

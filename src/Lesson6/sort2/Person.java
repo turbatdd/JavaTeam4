@@ -1,6 +1,4 @@
-package Lesson6.Sort5;
-
-import java.util.Comparator;
+package Lesson6.sort2;
 
 public class Person {
     private String fname;
@@ -32,14 +30,5 @@ public class Person {
     @Override
     public String toString() {
         return fname + " " + lname + " " + salary;
-    }
-
-    static class MyStaticInner implements Comparator<Person> {
-
-        @Override
-        public int compare(Person o1, Person o2) {
-//            Reversed order by lname
-            return o2.lname.compareTo(o1.lname);
-        }
     }
 }

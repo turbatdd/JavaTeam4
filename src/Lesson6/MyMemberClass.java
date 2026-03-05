@@ -17,6 +17,9 @@ public class MyMemberClass {
 
     // Member Inner class - private, public, default, protected
     public class MyMemberInnerClass {
+        // Non-static inner
+        // Inner Instance fields and methods
+
         private int num = 100;
         private String s = "Inner";
 

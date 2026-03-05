@@ -32,7 +32,7 @@ public class Electronics extends Product {
                 Warranty: %d
                 Warranty cost: %.2f
                 The price: %.2f
-                """, productName, price, warranty, warrantyCost, getPrice());
+                """, super.getPrice(), super.getPrice(), warranty, warrantyCost, getPrice());
 
     }
 }
