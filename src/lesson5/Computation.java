@@ -1,6 +1,4 @@
-package Lesson5;
-
-import java.time.LocalDate;
+package lesson5;
 
 // Abstraction, implemented(private, default, protected) and unimplemented(Abstract)methods - public
 // You cannot create object for Interface.

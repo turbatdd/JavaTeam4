@@ -1,4 +1,4 @@
-package Lesson5;
+package lesson5;
 
 public class Manager extends Employee {
     private double bonus;
@@ -18,6 +18,6 @@ public class Manager extends Employee {
 
     @Override
     public double getSalary() {
-        return this.getSalary() + bonus;
+        return super.getSalary() + bonus;
     }
 }

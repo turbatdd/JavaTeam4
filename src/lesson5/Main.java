@@ -1,14 +1,31 @@
-package Lesson5;
+package lesson5;
 
 public class Main {
 
     void main() {
+        //    Employee em1 = new Employee ()  // Runtime call  Employee -s getSalary()
+//    Employee em2 = new Manager()  // Runtime call getSalary()
+//    Manager em3 =  new Manager() //
+//    em1.getBonus() = > employee getSlaary() call
+//    me2.getBonus() = > Manaerer getSalary() call cant access only Employees method
+//    em3.getBonus() => can Access
+//    Donw casting - is em2.setBonus(600) convert to Employee to Manager  = ((Manager) e2).setBonus(600)
+
+//    Employee[] arr = {em1, em2, em3};
+//
+//    for(Employee e:arr){
+//     soutp(e.getName())
+//    soutp(e.getSalary());
+//    }
+
         Employee e1 = new Employee("Turuu", 110.0);
-//        Employee e2 = new Manager("Bat", 200.0);
-//        Manager e3 = new Manager("Tur", 550.0);
+        Employee e2 = new Manager("Bat", 200.0);
+        Manager e3 = new Manager("Tur", 550.0);
         Object[] stuff = {"Java", 10.11, 11, 13.65, "Hi"};
 
-//        System.out.println(e1.getClass().getSimpleName());
+        System.out.println(e1.getClass().getSimpleName() + "---"+e1.getSalary()); //110
+        System.out.println(e2.getClass().getSimpleName() + "---"+e2.getSalary()); //200
+        System.out.println(e3.getClass().getSimpleName() + "---"+e3.getSalary()); //550
 
     }
 

@@ -1,4 +1,4 @@
-package Lesson5;
+package lesson5;
 
 // Class E - Super class / Parent
 public class ClassE {
