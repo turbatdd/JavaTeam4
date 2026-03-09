@@ -19,9 +19,13 @@ public class Main {
 //    }
 
         Employee e1 = new Employee("Turuu", 110.0);
-        Employee e2 = new Manager("Bat", 200.0);
+        Employee e2 = new Employee("Bat", 200.0);
         Manager e3 = new Manager("Tur", 550.0);
         Object[] stuff = {"Java", 10.11, 11, 13.65, "Hi"};
+
+
+        System.out.println(e1.equals(e2));
+        System.out.println(e1 == e2);
 
         System.out.println(e1.getClass().getSimpleName() + "---"+e1.getSalary()); //110
         System.out.println(e2.getClass().getSimpleName() + "---"+e2.getSalary()); //200
