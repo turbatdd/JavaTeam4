@@ -22,4 +22,9 @@ public final class Teacher implements EmployeeData {
     public String getName() {
         return name;
     }
+
+    @Override
+    public String toString() {
+        return "Teacher: " + name + " - " + salary + " - " + bonus;
+    }
 }

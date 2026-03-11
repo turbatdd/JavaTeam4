@@ -29,11 +29,11 @@ public class Main {
         //Implementation steps
         //Step 1: implement the combine method, to combine the two lists
         List<EmployeeData> combined = combine(staff, teachers);
-        System.out.println(combined);
+        System.out.println("Combined List : " + combined);
 
         //Step 2: pass the combined list to computeSumOfSalaries
         double salarySum = Statistics.computeSumOfSalaries(combined);
-        System.out.println(salarySum);
+        System.out.println("Sum of salaries : " + salarySum);
     }
 
     //IMPLEMENT
@@ -44,5 +44,4 @@ public class Main {
 
         return combined;
     }
-
 }

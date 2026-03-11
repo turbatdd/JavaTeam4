@@ -19,7 +19,6 @@ public class OrderTest {
         aList.add(new Order("1007", "Jack", 10));
         aList.add(new Order("1008", "Big Mom", 80));
 
-        System.out.println("======================================================================================================");
         System.out.println("Delete an object by instance");
         removeLastItem(aList);
 

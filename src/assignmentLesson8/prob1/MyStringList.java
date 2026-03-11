@@ -255,51 +255,39 @@ public class MyStringList {
         l.add("Tom");
         l.add("Jerry");
 
-//        l.insert("Renuka", 4); // Position reached the length
-//        l.insert("Mohanraj", 5); // Position reached the length
-//        System.out.println(l);
-//        l.add("Dave");
-//        System.out.println("The list of size " + l.size() + " is " + l);
-//        l.remove("Mark");
-//        l.remove("Bob");
-//        System.out.println("The list of size " + l.size() + " is " + l);
-//        l.insert("Richard", 3);
-//        System.out.println("The list of size " + l.size() + " after inserting Richard into pos 3 is " + l);
-//        l.insert("Tonya", 0);
-//        System.out.println("The list of size " + l.size() + " after inserting Tonya into pos 0 is " + l);
-//        System.out.println(l.find("Susan"));
-        // String[] x = (String[]) l.clone();
-        // System.out.println(Arrays.toString(x));
-
-
-//        //Method 1
-//        String findStr = "Tom33";
-//        System.out.println("Method 1 \nSearch val: " + findStr + "\n" + Arrays.toString(l.strArray));
-//        System.out.println("Index of Item : " + l.indexOf(findStr));
-
+        //Method 1
+        System.out.println("======================================================================================================");
+        String findStr = "Tom";
+        System.out.println("Method 1 \nSearch val: " + findStr + "\n" + Arrays.toString(l.strArray));
+        System.out.println("Index of Item : " + l.indexOf(findStr));
+//
 //        //Method 2
+//        System.out.println("======================================================================================================");
 //        int remIndex = 2;
-//        System.out.println("\nMethod 2 \nRemove index: " + remIndex + "\n" + Arrays.toString(l.strArray));
+//        System.out.println("Method 2 \nRemove index: " + remIndex + "\n" + Arrays.toString(l.strArray));
 //
 //        System.out.println("Removed item: " + l.removeAt(remIndex));
 //        System.out.println(Arrays.toString(l.strArray));
 //        System.out.println("Size of Array " + l.size());
 //
 //        //Method 3
-//        System.out.println("\nMethod 3 \nClear():\n" + Arrays.toString(l.strArray));
+//        System.out.println("======================================================================================================");
+//        System.out.println("Method 3 \nClear():\n" + Arrays.toString(l.strArray));
 //        l.clear();
 //        System.out.println(l.toString());
 //
 //        //Method 4
-//        System.out.println("\nMethod 4 Replace item by index :\n" + Arrays.toString(l.strArray));
-//        int repIndex = 0;
+//        System.out.println("======================================================================================================");
+//        System.out.println("Method 4 Replace item by index :\n" + Arrays.toString(l.strArray));
+//        int repIndex = 1;
 //        String repVal = "Turuu replaced";
 //        System.out.println("Index: " + repIndex + " Replace value: " + repVal + "\nResult: " + l.set(repIndex, repVal));
 //        System.out.println(Arrays.toString(l.strArray));
-
-//       //Method 5
-//        System.out.println("\nMethod 5 \n Original array\n" + Arrays.toString(l.strArray));
-
+//
+//        //Method 5
+//        System.out.println("======================================================================================================");
+//        System.out.println("Method 5 \n Original array\n" + Arrays.toString(l.strArray));
+//
 //        MyStringList sList = new MyStringList();
 //        sList.add("Tom");
 //        sList.add("Bob");
@@ -307,16 +295,15 @@ public class MyStringList {
 //
 //        System.out.println("Contains array\n" + Arrays.toString(sList.strArray));
 //        System.out.println("Is it contains all : " + l.containsAll(sList));
-
-        //Method 6
-        int startIndex = 0;
-        int endIndex = 7;
-
-        var result = l.subList(startIndex, endIndex);
-
-        System.out.println("Method 6 subList \nStart index: " + startIndex + " end index: " + endIndex + "\n" + Arrays.toString(l.strArray));
-        System.out.println("SubList array : " + Arrays.toString(result.strArray));
-
-
+//
+//        //Method 6
+//        System.out.println("======================================================================================================");
+//        int startIndex = 0;
+//        int endIndex = 3;
+//
+//        var result = l.subList(startIndex, endIndex);
+//
+//        System.out.println("Method 6 subList \nStart index: " + startIndex + " end index: " + endIndex + "\n" + Arrays.toString(l.strArray));
+//        System.out.println("SubList array : " + Arrays.toString(result.strArray));
     }
 }

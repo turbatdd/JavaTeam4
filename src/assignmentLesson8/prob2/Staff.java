@@ -22,4 +22,9 @@ public final class Staff implements EmployeeData {
     public int getNumDependants() {
         return numDependants;
     }
+
+    @Override
+    public String toString() {
+        return "Staff: " + name + " - " + salary + " - " + numDependants;
+    }
 }

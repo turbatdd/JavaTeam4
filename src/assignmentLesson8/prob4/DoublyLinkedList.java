@@ -70,7 +70,7 @@ public class DoublyLinkedList {
     public void printReverse() {
 
         if (header.next == null) {
-            System.out.println("Empty list");
+            System.out.println("[]");
             return;
         }
 
@@ -91,7 +91,7 @@ public class DoublyLinkedList {
         }
         sb.append("]");
 
-        System.out.println("Reversed list: "+sb.toString());
+        System.out.println("Reversed list: " + sb.toString());
     }
 
     @Override
