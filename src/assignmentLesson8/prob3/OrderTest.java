@@ -47,8 +47,6 @@ public class OrderTest {
 
         System.out.println("Before sort by totalAmount: " + aList);
 
-//        aList.sort();
-
         // Sort by Total Amount
         aList.sort(Comparator.comparingDouble(Order::getTotalAmount));
 
