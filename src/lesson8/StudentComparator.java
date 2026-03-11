@@ -1,6 +1,4 @@
-package assignmentLesson8.prob3;
-
-import lesson8.Student;
+package lesson8;
 
 import java.util.Comparator;
 
