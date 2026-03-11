@@ -80,12 +80,18 @@ public class DoublyLinkedList {
             current = current.next;
         }
 
+        StringBuilder sb = new StringBuilder("[");
         while (current != header) {
-            System.out.print(current.value + " -> ");
+            sb.append(current.value);
             current = current.previous;
-        }
 
-        System.out.println();
+            if (current != header) {
+                sb.append(", ");
+            }
+        }
+        sb.append("]");
+
+        System.out.println("Reversed list: "+sb.toString());
     }
 
     @Override
@@ -126,7 +132,6 @@ public class DoublyLinkedList {
         list.addLast("Bob");
         list.addLast("Aadam");
         list.addLast("Bill");
-        list.addLast("Scoot");
 
         System.out.println("======================================================================================================");
         System.out.println("Before addLast List: " + list);
@@ -149,7 +154,6 @@ public class DoublyLinkedList {
         System.out.println("======================================================================================================");
         System.out.println("Before reverse List: " + list);
         list.printReverse();
-        System.out.println("After reverse List: " + list);
         System.out.println("======================================================================================================");
     }
 }
