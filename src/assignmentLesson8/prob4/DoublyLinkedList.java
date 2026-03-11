@@ -128,25 +128,22 @@ public class DoublyLinkedList {
         list.addLast("Bill");
         list.addLast("Scoot");
 
-
-//        System.out.println("======================================================================================================");
-//        System.out.println("Before addLast List: " + list);
-//        System.out.println("addLast(Carol)");
-//        list.addLast("Carol");
-//        System.out.println("After addLast List: " + list);
+        System.out.println("======================================================================================================");
+        System.out.println("Before addLast List: " + list);
+        System.out.println("addLast(Carol)");
+        list.addLast("Carol");
+        System.out.println("After addLast List: " + list);
 
         System.out.println("======================================================================================================");
         System.out.println("Before remove Bill List: " + list);
         System.out.println("Remove Bill: " + list.remove("Bill"));
         System.out.println("After remove Bill List: " + list);
-        System.out.println("======================================================================================================");
 
 
         System.out.println("======================================================================================================");
         System.out.println("Before removeFirst List: " + list);
         System.out.println("Remove First: " + list.removeFirst());
         System.out.println("After removeFirst List: " + list);
-        System.out.println("======================================================================================================");
 
 
         System.out.println("======================================================================================================");
