@@ -10,6 +10,9 @@ public class Lesson8 {
     2. LinkedList   -> List     -> Tree
                                 -> Hashable
 
+
+    How Random Access work
+
     Common operation
         Retrieve
         Inset
@@ -19,12 +22,17 @@ public class Lesson8 {
         Find if this list is empty
 
 
-    Arra
+    Contains check object s equals and hashmethod and check the Value. IF override it
 
 
     ADT – Abstract Data Type
 
      If i want to add already filled data how can i add to item at Index
+
+    Anonymous Array List -- ????
+    Four Ways to Initialize a List -- ?
+
+    RandomGenerator -???
 
      */
 
@@ -112,3 +120,5 @@ public class Lesson8 {
 
     }
 }
+
+
