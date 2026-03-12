@@ -1,6 +1,5 @@
-package lesson8.arraybasedlist;
+package march.arraybasedlist;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 

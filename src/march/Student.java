@@ -1,9 +1,9 @@
-package lesson8;
+package march;
 
 import java.util.Comparator;
 import java.util.Objects;
 
-public class Student implements Comparable, Comparator<Student> {
+public class Student implements Comparable<Student>, Comparator<Student> {
     private int id;
     private String name;
     private double gpa;
@@ -70,8 +70,8 @@ public class Student implements Comparable, Comparator<Student> {
     }
 
     @Override
-    public int compareTo(Object o) {
+    public int compareTo(Student o) {
 //        return name.compareTo(o.getName());
-        return 0;
+        return Integer.compare(id, o.id);
     }
 }
