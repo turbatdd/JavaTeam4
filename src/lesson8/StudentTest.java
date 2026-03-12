@@ -1,11 +1,8 @@
 package lesson8;
 
-import assignmentLesson8.prob3.StudentComparator;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Comparator;
 
 public class StudentTest {
 
