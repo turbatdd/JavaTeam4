@@ -20,7 +20,7 @@ public class TicketingSystem {
     public Ticket processTicket() {
         Ticket t = ticketQueue.poll();
         if (t == null) {
-            System.out.println("No tickets to process.");
+            System.out.println("No tickets in the queue");
         } else {
             System.out.println("Processing: " + t);
         }
@@ -30,7 +30,7 @@ public class TicketingSystem {
     public Ticket viewNextTicket() {
         Ticket t = ticketQueue.peek();
         if (t == null) {
-            System.out.println("No tickets in queue.");
+            System.out.println("No tickets in the queue.");
         } else {
             System.out.println("Next ticket: " + t);
         }
