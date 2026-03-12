@@ -54,7 +54,8 @@ public class LinkedListStack {
 
     @Override
     public String toString() {
-        if (top == null) return "[]";
+        if (top == null)
+            return "[]";
 
         StringBuilder sb = new StringBuilder("[");
         Node temp = top;
@@ -70,4 +71,5 @@ public class LinkedListStack {
         sb.append("]");
         return sb.toString();
     }
+
 }

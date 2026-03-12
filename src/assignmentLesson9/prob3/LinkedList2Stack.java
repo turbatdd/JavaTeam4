@@ -1,6 +1,6 @@
 package assignmentLesson9.prob3;
 
-public class LinkedListStack {
+public class LinkedList2Stack {
     private Node top;
     private int size;
 
@@ -50,7 +50,8 @@ public class LinkedListStack {
 
     @Override
     public String toString() {
-        if (top == null) return "[]";
+        if (top == null)
+            return "[]";
 
         StringBuilder sb = new StringBuilder("[");
         Node temp = top;

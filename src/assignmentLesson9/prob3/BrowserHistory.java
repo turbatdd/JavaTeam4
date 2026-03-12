@@ -2,14 +2,14 @@ package assignmentLesson9.prob3;
 
 
 public class BrowserHistory {
-    private LinkedListStack backStack;
-    private LinkedListStack forwardStack;
+    private LinkedList2Stack backStack;
+    private LinkedList2Stack forwardStack;
     private String curUrl;
 
     public BrowserHistory(String url) {
         this.curUrl = url;
-        this.backStack = new LinkedListStack();
-        this.forwardStack = new LinkedListStack();
+        this.backStack = new LinkedList2Stack();
+        this.forwardStack = new LinkedList2Stack();
     }
 
     public void visit(String url) {
@@ -17,13 +17,13 @@ public class BrowserHistory {
             backStack.push(curUrl);
         }
         curUrl = url;
-        forwardStack = new LinkedListStack();
+        forwardStack = new LinkedList2Stack();
         System.out.println("Visited: " + curUrl);
     }
 
     public void back() {
         if (backStack.isEmpty()) {
-            System.out.println("No history to go back to.");
+            System.out.println("No history to go back to");
             return;
         }
         forwardStack.push(curUrl);
@@ -33,7 +33,7 @@ public class BrowserHistory {
 
     public void forward() {
         if (forwardStack.isEmpty()) {
-            System.out.println("No forward history.");
+            System.out.println("No forward history");
             return;
         }
         backStack.push(curUrl);
