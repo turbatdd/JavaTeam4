@@ -1,7 +1,5 @@
 package assignmentLesson8.prob4;
 
-import lesson8.MyLL;
-
 public class DoublyLinkedList {
 
     Node header;
