@@ -21,6 +21,8 @@ public class TestClass {
 //            System.out.println("Deposit amount: " + p4 + " is success: " + c.deposit(p4));
 
             System.out.println("Balance: " + c.getBalance());
+            System.out.println("Successful deposit and withdraw.");
+
         } catch (Exception e) {
             System.out.println(e);
         }
