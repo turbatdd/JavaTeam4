@@ -1,0 +1,4 @@
+
+2026-03-14 11:07:03 DEBUG TestLogger:10 - This is a debug message
+2026-03-14 11:07:03 INFO  TestLogger:11 - This is an info message
+2026-03-14 11:07:03 ERROR TestLogger:12 - This is an error message
